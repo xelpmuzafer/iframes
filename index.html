@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="en" ng-app="myMitan">
+<head>
+    <title>Mitaan</title>
+    <meta name="keywords"  content="Cg Mitaan, CG Mitan, Doorstep  Service Chhattisgarh, cg mitaan, cg mitan, Chhattisgarh Mitaan, chhattisgarh mitan, hamar Sarkar hamar dwar, Mitaan, Mittan, Mukhyamantri Mitaan, Mukhyamantri Mittan" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel = "icon" href ="images/favicon.ico"type = "image/x-icon">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.html">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+
+    <style>
+        button {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .cmImage {
+            border-radius: 50%;
+        }
+
+        .cmImage:hover {
+            opacity: 0.8
+        }
+
+        .right-card:hover {
+
+            background: #ececec;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="pageUpBtn" title="Go to top">
+        <i style="font-size:24px" class="fa">&#xf102;</i>
+    </button>
+    <section ng-controller="mitan_mainCtrl" layout:fragment="content" id="topSection">
+             <!-- Track Section -->
+             <section id="trackSection" class="whiteBgSection">
+                <div class="container-fluid" style="margin-bottom: 60px;">
+                   
+                    <div class="padding-bottom-3x mb-1" style="margin-top:25px;">
+                        <div class="card mb-3">
+                            <div class="p-4 text-center text-white text-lg rounded-top" style="background: #00237d;">
+                               
+                                    <div>
+                                        <div class="col-auto track-input">
+                                            <label class="sr-only" >Enter Application Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="ARNnumber"  ng-model="track.ARNnumber"
+                                                    placeholder="Enter Application Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto track-btn" style="display: inline-block;">
+                                            <button type="submit" class="btn btn-primary" ng-click="submit()">Submit</button>
+                                        </div>
+                                        
+
+                                        <div id="loader" class="col-auto" style="display: none;">
+                                            <img src="images/newloader.gif" width="50px" height="50px">
+                                        </div>
+                                        <div  class="col-auto">
+                                            <span id="message"></span>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                            <div class="p-3 text-center text-white bg-dark rounded-top" ><span
+                                    class="text-uppercase">Appointment REF Number - </span><span id="ticketNumber" class="text-medium">NA</span>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary">
+                                <div class="w-100 text-center py-1 px-2">
+                                    <span  class="text-medium"><b>Citizen Name:</b></span><br><span id="citizenName" class="marg-l-15-all">NA</span>
+                                </div>
+                                <div class="w-100 text-center py-1 px-2">
+                                    <span  class="text-medium"><b>Status:</b></span><br>
+                                    <span id="status" class="marg-l-15-all">NA</span>
+                                </div>
+                                <!-- <div class="w-100 text-center py-1 px-2"><span class="text-medium">Last Updated Date:</span>
+                                    <span class="marg-l-15-all">{{track.application.updatedAt?track.application.updatedAt:'NA'}}</span>
+                                </div> -->
+                                <div  class="w-100 text-center py-1 px-2"><span class="text-medium"><b>Last Updated Date:</b></span><br>
+                                    <span id="datetime" class="marg-l-15-all">NA</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x"
+                                    style="padding-top: 20px;">
+                                    
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-cart"></i></div>
+                                        </div>
+                                        <h4 class="step-title">Appointment Booked</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-note2"></i></div>
+                                        </div>
+                                        <h4 class="step-title">In Progress by field Agent</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-culture"></i></div>
+                                        </div>
+                                        <h4 class="step-title">In Progress by field Department</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-car"></i></div>
+                                        </div>
+                                        <h4 class="step-title">Out for Delivery</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-home"></i></div>
+                                        </div>
+                                        <h4 class="step-title">Delivered</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js" defer></script>
+        
+        <script src="https://kit.fontawesome.com/305d0184a5.js" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.html"><\/script>')</script>
+        <script src="./js/jquery-2.2.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/holder.min.js"></script>
+        <script src="js/track.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <script src="js/page.js"></script>
+
+    </section>
+
+ 
+</body>
+
+</html>

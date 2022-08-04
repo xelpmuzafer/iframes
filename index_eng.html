@@ -1,0 +1,669 @@
+﻿<!doctype html>
+<html lang="en" ng-app="myMitan">
+<head>
+    <title>Mitaan</title>
+    <meta name="keywords"  content="Cg Mitaan, CG Mitan, Doorstep  Service Chhattisgarh, cg mitaan, cg mitan, Chhattisgarh Mitaan, chhattisgarh mitan, hamar Sarkar hamar dwar, Mitaan, Mittan, Mukhyamantri Mitaan, Mukhyamantri Mittan" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel = "icon" href ="images/favicon.ico"type = "image/x-icon">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.html">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+
+    <style>
+        button {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .cmImage {
+            border-radius: 50%;
+        }
+
+        .cmImage:hover {
+            opacity: 0.8
+        }
+
+        .right-card:hover {
+
+            background: #ececec;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="pageUpBtn" title="Go to top">
+        <i style="font-size:24px" class="fa">&#xf102;</i>
+    </button>
+    <section ng-controller="mitan_mainCtrl" layout:fragment="content" id="topSection">
+        <div class="top-section-bg" style="text-align: right;">
+            <div style="padding: 7px;">
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://twitter.com/cgmitaan" target="_blank"><i class="fa-brands fa-twitter" style="font-size: 25px;color: #00237d;"></i></a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://www.facebook.com/cgmitaan.in"  target="_blank"><i class="fa-brands fa-facebook" style="font-size: 25px; color: #00237d;"></i></a>
+                </div>            
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://www.instagram.com/cgmitaanyojana/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 25px;color: #00237d;"></i></a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://www.linkedin.com/in/cg-mitaan-816a45238/" target="_blank"><i class="fa-brands fa-linkedin-in" style="font-size: 25px;color: #00237d;"></i></a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="index_eng.html" style="color:#00237d">English</a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="index_hindi.html" style="color:#00237d">हिन्दी</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 top__banner">
+        </div> 
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #00237d;" id="navbar-menu">
+                <button class="navbar-toggler" id="navbar-btn" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               <div style="padding-left: 18%;">
+                <div class="collapse navbar-collapse" id="navbarCollapse" style="align-content: center;">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active-1">
+                            <a class="nav-link" onclick="closeMenu();topFunction()" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#aboutSection" onclick="closeMenu()">About MITAAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#serviceListSection" onclick="closeMenu()">Service
+                                list</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#faqSection" onclick="closeMenu()">FAQ</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#trackSection" onclick="closeMenu()">Track Application</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#contactSection" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main role="main">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner carousel-height">
+                    <div class="carousel-item active">
+                        <img class="first-slide carousel-height" src="images/Mitaan_Banner_1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="second-slide carousel-height" src="images/Mitaan_Banner_2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="Three-slide carousel-height" src="images/Mitaan_Banner_3.jpg" alt="Three slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="Four-slide carousel-height" src="images/Mitaan_Banner_4.jpg" alt="Four slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+              
+            </div>
+            <div class="container-fluid" style="padding: 0; margin: 0;">
+                <div style="display: flex;">
+                    <div class="latestnews">
+                        <p class="latest-head-para">Latest Updates</p>
+                    </div>
+                    <div class="tcontainer" style="width: 100%;">
+                        <div class="ticker-move">
+                            <div class="ticker-item">
+                                <p>सुविधाओं का हो रहा विस्तार, हमर सरकार हमर द्वार | 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Section     -->
+            <section id="aboutSection" class="serviceSection">
+                <div class="container-fluid">
+                    <h4 style="margin-top: 30px;">Mukhyamantri Mitaan Yojana
+                        <div style="border-bottom: 4px solid #00237d; width: 218px; padding-top: 5px;"></div>
+                    </h4>                                     
+                   
+                    <div class="col-md-12 d-flex flex-wrap">
+                    <div class="col-md-8" style="padding-top: 10px; text-align: justify;">                       
+                        <p style="color: rgb(51, 55, 63); margin-top: 25px;">
+                            <p>The Chhattisgarh State government is striving to provide all the government services to its citizens via the mechanism of “घर पहुँच सरकारी सेवा” through a new flagship scheme “Mukhyamantri Mitaan Yojana”. </p>
+    
+                            <p>Mukhyamantri Mitaan Yojana aims to make the public service delivery system equally accessible to all the citizens with enhanced accountability, transparency, responsiveness and inclusiveness. The primary objectives of the Mukhyamantri Mitaan Yojana are:</p>
+    
+                            <ul style="line-height: 2; margin-bottom: 0;">
+                                <li>To deliver citizen services in a time bound manner.</li>
+                                <li>To provide hassle free citizen service delivery channel.</li>
+                                <li>To provide platform for citizen to get first-hand information about the citizen centric government services.</li>
+                                
+                            </ul>
+    
+                            <p style="margin-top:10px;">For availing the government services, normally citizens have to make multiple rounds to the blocks, 
+                                municipal corporations, tehsils, government offices, and other concerned departments. However, 
+                                through Mukhyamantri Mitaan Yojana, the Chhattisgarh State Government aims to bring in a paradigm shift 
+                                in the way the citizens can get required government services and the certificates issued.<br/><br/>
+                                Mukhyamantri Mitaan Yojana focuses on the collection of the required documents from the home of the citizens through a nominated individual “Mitaan” who shall be scanning the certificates and would get the processes rolling for issuance of the certificates/ services to the citizens and once the certificate is issued by the department, 
+                                same shall be delivered at the citizens door-step by the Mitaan in a sealed envelope.<br/><br/>
+                                Through the Mukhyamantri Mitaan Yojana the state government is overhauling the way G2C services are being provided and is making the overall experience of the citizens more lucid,
+                                 without any requirement of travelling to government offices.<br/><br/>
+                                 Currently the Mukhyamantri Mitaan Yojana has been launched in 14 Municipal Corporations of the State and in the due course of time it shall be expanded to other Urban Local Bodies gradually.<br/>
+                                The MukhyaMantri Mitaan services are available from 8AM to 8PM, citizens can avail the
+                                service at their convenient time.
+                            </p>
+
+    
+                            <div class="grid-container">
+                                <div>1. Ambikapur</div>
+                                <div>2. Bhilai</div>
+                                <div>3. Bhilai-Charoda</div>
+                                <div>4. Bilaspur</div>
+                                <div>5. Birgaon</div>
+                                <div>6. Chirimiri</div>
+                                <div>7. Dhamtari</div>
+                                <div>8. Durg</div>
+                                <div>9. Jagdalpur</div>
+                                <div>10. Korba</div>
+                                <div>11. Raigarh</div>
+                                <div>12. Raipur</div>
+                                <div>13. Rajnandgaon</div>
+                                <div>14. Risali</div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-md-4 order-first order-md-4" style="padding-top: 20px; text-align: center;">
+                        <div class="CmDivSection">
+                            <img src="images/CM1.jpg" alt="banner" height="160px" width="160px" class="cmImage" />
+                            <p style="color: #736f6f;font-size: 18px;margin-top: 10px;margin-bottom: 0;"><b>Shri Bhupesh
+                                    Baghel</b></p>
+                            <p style="color: #5d5d5d">Honorable Chief Minister of Chhattisgarh</p>
+                        </div>
+                        <div class="CmDivSection">
+                            <img src="images/DR_Dahariya.jpg" alt="banner" height="160px" width="160px" class="cmImage" />
+                            <p style="color: #736f6f;font-size: 18px;margin-top: 10px;margin-bottom: 0;"><b>Dr. Shiv Kumar Dahariya</b></p>
+                            <p style="color: #5d5d5d">Minister Urban Administration & Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" style="padding:10px 15px; margin-bottom:30px;">                        
+                        <div class="col-md-4 zoom">
+                            <div style="padding: 10px 0;">
+                                <a style="width:100%;" id="myBtn" href="#">
+                                    <div class="left-side_1 left-card"><img src="images/call-center.jpg"></div>
+                                    <div class="right-side_1 right-card" style="padding-bottom: 25%;">
+                                        <h4>CALL ON 
+                                            <!-- <b style="color: #00237d;font-size: 20px;">14545</b> -->
+                                            <a href="tel:14545" style="color: #00237d;font-size: 20px;">14545</a>
+                                             <br/>TO BOOK A SLOT</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 zoom">
+                            <div style="padding: 10px 0;">
+                                <a style="width:100%" href="#trackSection">
+                                    <div class="left-side_2 left-card"><img src="images/search.jpg"></div>
+                                    <div class="right-side_2 right-card">
+                                        <h4>TRACK YOUR APPLICATION STATUS</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 zoom">
+                            <div style="padding: 10px 0;">
+                                <a style="width:100%" id="myBtn" href="#">
+                                    <div class="left-side left-card"><img src="images/info.jpg"></div>
+                                    <div class="right-side right-card">
+                                        <h4>FEEDBACK</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="serviceListSection" class="whiteBgSection">
+                <div class="container-fluid" style="min-height: 80vh;">
+                    <h4 style="margin-top: 30px;">Services
+                        <div style="border-bottom: 4px solid #00237d; width: 70px; padding-top: 5px;"></div>
+                       
+                    </h4>
+                    <div class="col-md-12" style="margin-top:20px; padding: 0;">
+                        <a href="/document-guide" target="_blank" class="btn btn-primary pull-right" style=" border-radius: 4px solid #00237d; background-color:  #00237d;">Document Guide</a>
+                          <!--  https://mitaan-web.web.app/document-guide -->
+                    </div>
+                    <div class="col-md-12" style="margin-top:60px; margin-bottom: 40px; padding: 0;">
+                        <div class="d-flex flex-wrap justify-content-between sub-heading-content">
+                            <div class="col-md-6 service-left" id="service-left-container">
+                            </div>
+                            <div class="col-md-6 service-right" id="service-right-container">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" style="width:1250px;">
+                    <div class="modal-content" style="height:70vh">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title"><label id="ProductName"></label></h4>
+                        </div>
+                        <div id="sampleDocModal" class="modal-body racing">
+                            <embed id="documentEmbed" src="" type="application/pdf" width="100%" height="100%">
+                        </div>
+                        <div class="modal-footer" style="background-color: #2c498d;">
+                            <a id="sampleDownloadLink" target="_blank" style="color:#fff">Download</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faq Section -->
+            <section id="faqSection" class="serviceSection">
+                <div class="container-fluid">
+                    <h4 style="margin-top: 32px;">Frequently Asked Questions
+                        <div style="border-bottom: 4px solid #00237d; width: 190px; padding-top: 5px;"></div>
+                    </h4>
+                    <div>
+                        <p>Here are answers to most common questions. Can't find an answer? Call us!</p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 sub-heading-content">
+                                <div class="faq-left-card"><img src="images/faq3.png"></div>
+                            </div>
+                            <div class="col-md-8 sub-heading-content faq-content">
+                                <button class="accordion">What is Hamar Sarkar Hamar Dwar (Mukhyamantri Mitaan
+                                    Yojana)?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Hamar Sarkar Hamar Dwar (Mukhyamantri Mitaan Yojana) aims to provide more than 100 citizen centric services to the citizen of chhattisgarh via home delivery Model.
+                                             Currently services are launched in 14 cities of Chhattisgarh.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">What are the objectives of Hamar Sarkar Hamar Dwar
+                                    (Mukhyamantri Mitaan Yojana)?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Mukhyamantri Mitaan Yojana has been envisaged with multiple objectives like to deliver citizen services in a time bound manner, to provide hassle free citizen service delivery channel, to provide platform for citizen to get first-hand information about the citizen services,
+                                             develop a governance mechanism which assess the actual impact of the project, create a positive awareness about the governance and state partnership with the citizen. </li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">Who can avail service through Mukhyamantri Mitaan
+                                    Yojana?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Mukhyamantri Mitaan Yojana is now operational in 14 ULBs in Chhattisgarh and citizens residing in these ULBs are eligible to avail services through Mukhyamantri Mitaan Yojana.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">What are the ULBs where Mukhyamantri Mitaan Yojana is
+                                    active?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Ambikapur, Bilaspur, Dhamtri, Korba, Rajnandgaon, Bhilai, Birgaon, Durg, Raigarh, Risali, Bhilai-Charoda, Chirmiri (Koriya), Jagdalpur & Raipur</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">How do I avail services through Mitaan?</button>
+                                <div class="panel accordionlist">
+                                    <ul>                               
+                                        <li>Citizen will have 3 (three) modes of raising Service Request. Mode 1: You can call <b href="tel:14545" style="color: #00237d;">14545</b> where well-trained Call Centre Executives will be available to assist citizens and requests for citizen centric service available on Mitaan.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">How much do I have to pay to avail services through
+                                    Mitaan?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Citizen has to pay Rs 50 and applicable Departmental fees to avail services. 
+                                            Departmental fees differ from service to service.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">How do I confirm if my appointment is booked or not?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Once the appointment is booked, you will receive an SMS on your registered mobile number. 
+                                            You can also verify appointment status on ‘Track your Application status’ page/section of this website.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">What services are available through Mitaan?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Please click on ‘Service List’ for full list of services.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">Can I avail multiple services in one slot?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>One service can be availed in one slot. To avail multiple services, 
+                                            you can book individual slot for each service.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">What documents do I need to avail services through
+                                    Mitaan?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Requirement of documents vary from service to service. Please click on ‘Service List’ 
+                                            in order to know about the mandatory requirement of document/s required for the desired service.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">How do I track the status of service availed through
+                                    Mitaan?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>You will get an SMS updates on the registered mobile number at each step of application process. You can also track through ‘Track your Application status’ page/section of this website.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">How do I confirm the agent visiting me is genuine?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Mitaan Field Executive will be wearing official uniform and carry ID card. For further authentication, once the appointment is booked, you will receive details of Mitaan Field Executive on the registered mobile number which you can use to verify Mitaan Field Executive. </li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">Can I reschedule my appointment?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Yes, you can reschedule your appointment 1 day before the scheduled time in case of any unforeseen circumstances by calling the Call Centre Number.
+                                        </li>
+                                    </ul>
+                                </div>                                
+
+                                <button class="accordion">Where do I contact in case Mitaan does not reach on
+                                    time?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>You may contact to the Call Centre Executive to know about Mitaan Field Executive status.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">What payment option are enabled/available?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Cash mode and various digital payment modes (UPI, Paytm etc) are available.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">On which days is service available?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Service is available from 8 AM to 8 PM on all days of the week except 26th January, 15th August and 2nd October.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">Do I handover original copies of supporting document to Mitaan
+                                    Field Executive
+                                    required for the service?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>The Mitaan Field Executive will scan the documents in the tablet/Mobile in your presence, upload the documents in the system and return back the original documents to you. Mitaan Field Executive is not authorized to bring hard copies of your supporting documents either in original or photocopy. </li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">How can I get my certificate?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Mitaan Field Executive shall deliver the certificate in a sealed envelope by visiting to your address given by you at the time of application submission.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">What is the timeline for the service I applied?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>Time line varies from service to service. To know about the timeline for each service, please click on ‘Service List’.</li>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">Do I need to pay any additional amount other than the fees
+                                    being paid
+                                    at the time of application submission?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>No, the fees paid by you at the time of application submission is including everything.</li>
+                                    </ul>
+                                </div>
+
+                            </div>                           
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- Track Section -->
+            <section id="trackSection" class="whiteBgSection">
+                <div class="container-fluid" style="margin-bottom: 60px;">
+                    <h4 style="margin-top: 30px;">Track Your Application
+                        <div style="border-bottom: 4px solid #00237d; width: 85px; padding-top: 5px;">
+                    </h4>
+                    <div class="padding-bottom-3x mb-1" style="margin-top:25px;">
+                        <div class="card mb-3">
+                            <div class="p-4 text-center text-white text-lg rounded-top" style="background: #00237d;">
+                               
+                                    <div>
+                                        <div class="col-auto track-input">
+                                            <label class="sr-only" >Enter Application Number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="ARNnumber"  ng-model="track.ARNnumber"
+                                                    placeholder="Enter Application Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto track-btn" style="display: inline-block;">
+                                            <button type="submit" class="btn btn-primary" ng-click="submit()">Submit</button>
+                                        </div>
+                                        
+
+                                        <div id="loader" class="col-auto" style="display: none;">
+                                            <img src="images/newloader.gif" width="50px" height="50px">
+                                        </div>
+                                        <div  class="col-auto">
+                                            <span id="message"></span>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                            <div class="p-3 text-center text-white bg-dark rounded-top" ><span
+                                    class="text-uppercase">Appointment REF Number - </span><span id="ticketNumber" class="text-medium">NA</span>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary">
+                                <div class="w-100 text-center py-1 px-2">
+                                    <span  class="text-medium"><b>Citizen Name:</b></span><br><span id="citizenName" class="marg-l-15-all">NA</span>
+                                </div>
+                                <div class="w-100 text-center py-1 px-2">
+                                    <span  class="text-medium"><b>Status:</b></span><br>
+                                    <span id="status" class="marg-l-15-all">NA</span>
+                                </div>
+                                <!-- <div class="w-100 text-center py-1 px-2"><span class="text-medium">Last Updated Date:</span>
+                                    <span class="marg-l-15-all">{{track.application.updatedAt?track.application.updatedAt:'NA'}}</span>
+                                </div> -->
+                                <div  class="w-100 text-center py-1 px-2"><span class="text-medium"><b>Last Updated Date:</b></span><br>
+                                    <span id="datetime" class="marg-l-15-all">NA</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x"
+                                    style="padding-top: 20px;">
+                                    
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-cart"></i></div>
+                                        </div>
+                                        <h4 class="step-title">Appointment Booked</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-note2"></i></div>
+                                        </div>
+                                        <h4 class="step-title">In Progress by field Agent</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-culture"></i></div>
+                                        </div>
+                                        <h4 class="step-title">In Progress by field Department</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-car"></i></div>
+                                        </div>
+                                        <h4 class="step-title">Out for Delivery</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-home"></i></div>
+                                        </div>
+                                        <h4 class="step-title">Delivered</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contactSection" class="serviceSection">
+                <div class="container-fluid">
+                    <h4 style="margin-top: 30px;">Contact Us
+                        <div style="border-bottom: 4px solid #00237d; width: 85px; padding-top: 5px;">
+                    </h4>
+                    <div class="row" style="margin-top: 20px; padding: 0 15px;">
+
+                        <div class="col-md-4 contact-left" style="margin-top: 10px;">
+                            <div class="contact-us-content">
+                                <div style="display: flex;">
+                                    <div><i class="fa fa-map-marker contact-icon" aria-hidden="true"></i></div>
+                                    <div style="padding-left: 15px;">
+                                        <p style="display: inline-block;">State Urban Development Agency</br>
+                                            Nava Raipur Atal Nagar,</br>
+                                            Indravati Bhawan,</br>
+                                            Raipur,Chhattisgarh - 492002</p>  
+                                    </div>
+                                </div>
+
+                                <div style="display: flex;">
+                                    <div>
+                                        <i class="fa fa-calendar contact-icon" aria-hidden="true"></i>
+                                    </div>
+                                    <div style="padding-left: 15px; padding-top: 5px;">
+                                        <p style="display: inline-block; margin:0">All Days </p>
+                                        <p class="time">(Except 3 National Holiday)</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; margin-top:20px;">
+                                    <div><i class="fa fa-clock-o contact-icon" aria-hidden="true"></i></div>
+                                    <div style="padding-left: 15px; padding-top: 5px;">
+                                        <p class="time">8 am to 8 pm</p>                                     
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top:20px;">
+                                    <div><i class="fa fa-phone contact-icon" aria-hidden="true"></i></div>
+                                    <div style="padding-left: 15px; padding-top: 5px;">
+                                        <a href="tel:14545" style="color: #e5e7ec;">14545</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 contact-right" style="margin-top: 10px;">                            
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12515.535381305126!2d81.79078552825708!3d21.156738413527712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x858c47da3af6101e!2sState%20Urban%20Development%20Agency!5e0!3m2!1sen!2sin!4v1651490146291!5m2!1sen!2sin"
+                            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="footer-copyright">
+                <footer>
+                    <ul id="menu" style="padding-left: 0;">
+                        <li>Copyright © 2022. All rights reserved with Urban Administration & Development (UAD) , Raipur, Chhattisgarh</li>
+                    </ul>
+                </footer>
+            </div>
+        </main>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js" defer></script>
+        
+        <script src="https://kit.fontawesome.com/305d0184a5.js" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.html"><\/script>')</script>
+        <script src="./js/jquery-2.2.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/holder.min.js"></script>
+        <script src="js/track.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <script src="js/page.js"></script>
+
+    </section>
+
+ 
+</body>
+
+</html>

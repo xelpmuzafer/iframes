@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myMitan">
+  <head>
+    <base href="/" />
+    <title>Mitaan</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.html" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/pages.css" rel="stylesheet" />
+    <link href="css/feedback.css" rel="stylesheet" />
+    <link href="css/rating.css" rel="stylesheet" />
+
+
+    <style>
+      button {
+        border: none !important;
+        outline: none !important;
+      }
+
+      .cmImage {
+        border-radius: 50%;
+      }
+
+      .cmImage:hover {
+        opacity: 0.8;
+      }
+
+      .right-card:hover {
+        background: #ececec;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="pageUpBtn" title="Go to top">
+      <i style="font-size: 24px" class="fa">&#xf102;</i>
+    </button>
+    <section
+      ng-controller="mitaan_connect"
+      layout:fragment="content"
+      id="topSection"
+    >
+      <div class="top-section-bg" style="text-align: right">
+        <div style="padding: 7px">
+          <div style="padding: 0 7px; display: inline-block">
+            <a href="#"
+              ><i
+                class="fa-brands fa-facebook"
+                style="font-size: 25px; color: #4c7c7c"
+              ></i
+            ></a>
+          </div>
+          <div style="padding: 0 7px; display: inline-block">
+            <a href="#"
+              ><i
+                class="fa-brands fa-twitter"
+                style="font-size: 25px; color: #4c7c7c"
+              ></i
+            ></a>
+          </div>
+          <div style="padding: 0 7px; display: inline-block">
+            <a href="#"
+              ><i
+                class="fa-brands fa-instagram"
+                style="font-size: 25px; color: #4c7c7c"
+              ></i
+            ></a>
+          </div>
+          <div style="padding: 0 7px; display: inline-block">
+            <a
+              id="feedbackEngLink"
+              href="feedback_eng.html"
+              style="color: rgb(64, 63, 70)"
+              >English</a
+            >
+          </div>
+          <div style="padding: 0 7px; display: inline-block">
+            <a
+              id="feedbackHindiLink"
+              href="feedback_hindi.html"
+              style="color: rgb(64, 63, 70)"
+              >हिन्दी</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div style="height: 30%" class="cmHeading">
+              <a href="#">
+                <img
+                  src="images/CM_Banner.jpg"
+                  alt="CM Photo"
+                  style="height: 100px"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <div class="heading">
+              <h2 style="margin: 0px; color: black">
+                <span><b>मुख्यमंत्री मितन योजना</b></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <nav
+          class="navbar navbar-expand-md navbar-dark"
+          style="background-color: #4c7c7c"
+          id="navbar-menu"
+        >
+          <button
+            class="navbar-toggler"
+            id="navbar-btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="NO"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active-1">
+                <a class="nav-link" onclick="closeMenu();topFunction()" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link smoothScroll"
+                  href="#aboutSection"
+                  onclick="closeMenu()"
+                  >About MITAAN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link smoothScroll"
+                  href="#serviceListSection"
+                  onclick="closeMenu()"
+                  >Service list</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link smoothScroll"
+                  href="#faqSection"
+                  onclick="closeMenu()"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link smoothScroll"
+                  href="#trackSection"
+                  onclick="closeMenu()"
+                  >Track Application</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link smoothScroll"
+                  href="#contactSection"
+                  onclick="closeMenu()"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main role="main">
+        <div id="loader" class="loader">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="successMessage">
+          <h3>Submitted successfully</h3>
+          <p>redirecting you back to home...</p>
+        </div>
+        <div id="errorMessage">
+          <h3>Something went wrong</h3>
+          <p>pls try again later...</p>
+        </div>
+        <div id="formContainer" class="form-container">
+          <section
+            id="citizenAgentConnect"
+            class="whiteBgSection"
+            style="border-radius: 10px"
+          >
+            <div style="min-height: 100%">
+              <h2 id="mainText">प्रतिपुष्टी फ़ार्म</h2>
+              <div class="user-details-container">
+                <div class="input-container">
+                  <label for="name"> आवेदक का नाम:</label>
+                  <input type="text" disabled id="name" placeholder="name" />
+                </div>
+                <div class="input-container">
+                  <label for="mobile"> मोबाइल नंबर:</label>
+                  <input
+                    type="text"
+                    disabled
+                    id="mobile"
+                    placeholder="mobile#"
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="service">सेवा का नाम:</label>
+                  <input
+                    type="text"
+                    disabled
+                    id="service"
+                    placeholder="Service#"
+                  />
+                </div>
+              </div>
+              <form id="questionContainer">
+                <input type="submit" value="फार्म जमा करें" />
+              </form>
+            </div>
+          </section>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer-copyright fixed-bottom">
+          <footer>
+            <ul id="menu">
+              <li>Copyright © 2021. All rights reserved</li>
+            </ul>
+          </footer>
+        </div>
+      </main>
+
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+
+      <script src="js/angular.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/controllers.js"></script>
+
+      <script
+        src="https://kit.fontawesome.com/305d0184a5.js"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        window.jQuery ||
+          document.write(
+            '<script src="assets/js/vendor/jquery-slim.min.html"><\/script>'
+          );
+      </script>
+      <script src="./js/jquery-2.2.4.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/holder.min.js"></script>
+      <script src="js/feedback.js" defer></script>
+      <script
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+        type="text/javascript"
+      ></script>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css"
+      />
+      <script src="js/page.js"></script>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,1181 @@
+<!doctype html>
+<html lang="en" ng-app="myMitan">
+<head>
+    <title>मितान</title>
+    <meta charset="utf-8">
+    <meta name="keywords"  content="छ.ग. मितान, छत्तीसगढ़ मितान, घर पहुंच सेवा, घर पहुंच सेवा छत्तीसगढ़, हमर सरकार हमर द्वार, मुख्यमंत्री मितान, छ ग मितान, छग मितान" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel = "icon" href ="images/favicon.ico"type = "image/x-icon">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.html">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+
+    <!--<script src="js/JSSummaryReports.js"></script>-->
+    <style>
+        button {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .cmImage {
+            border-radius: 50%;
+        }
+
+        .cmImage:hover {
+            opacity: 0.8
+        }
+
+        .right-card:hover {
+
+            background: #ececec;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="pageUpBtn" title="Go to top">
+        <i style="font-size:24px" class="fa">&#xf102;</i>
+    </button>
+
+    <section ng-app="mitan_main" ng-controller="mitan_mainCtrl" layout:fragment="content" id="topSection">
+        <div class="top-section-bg" style="text-align: right;">
+            <div style="padding: 7px;">
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://twitter.com/cgmitaan" target="_blank"><i class="fa-brands fa-twitter" style="font-size: 25px;color: #00237d;"></i></a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://www.facebook.com/cgmitaan.in"  target="_blank"><i class="fa-brands fa-facebook" style="font-size: 25px; color: #00237d;"></i></a>
+                </div>            
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://www.instagram.com/cgmitaanyojana/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 25px;color: #00237d;"></i></a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="https://www.linkedin.com/in/cg-mitaan-816a45238/" target="_blank"><i class="fa-brands fa-linkedin-in" style="font-size: 25px;color: #00237d;"></i></a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="index_eng.html" style="color:#00237d">English</a>
+                </div>
+                <div style="padding: 0 7px; display: inline-block;">
+                    <a href="index_hindi.html" style="color:#00237d">हिन्दी</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">           
+                <div class="col-xs-12 col-sm-12 top__banner_Hindi">
+                    <!-- <a href="#">
+                        <img src="images/top_banner_Eng.png" alt="CM Photo" style="height: auto;">
+                    </a> -->
+                </div>                             
+            </div>
+        </div>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #00237d;" id="navbar-menu">
+                <button class="navbar-toggler" id="navbar-btn" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="padding-left: 24%;">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active-1">
+                            <a class="nav-link" onclick="closeMenu();topFunction()" href="#">होम</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#aboutSection" onclick="closeMenu()">मितान के बारे
+                                में</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#serviceListSection" onclick="closeMenu()">सेवाएं</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#faqSection" onclick="closeMenu()">सामान्य प्रश्न</a>
+                        </li>                       
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#trackSection" onclick="closeMenu()">आवेदन ट्रैक करे</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smoothScroll" href="#contactSection" onclick="closeMenu()">संपर्क
+                                करें</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <main role="main">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner carousel-height">
+                    <div class="carousel-item active">
+                        <img class="first-slide carousel-height" src="images/Mitaan_Banner_1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="second-slide carousel-height" src="images/Mitaan_Banner_2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="Three-slide carousel-height" src="images/Mitaan_Banner_3.jpg" alt="Three slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="Four-slide carousel-height" src="images/Mitaan_Banner_4.jpg" alt="Four slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>                
+            </div>
+            <div class="container-fluid" style="padding: 0; margin: 0;">
+                <div style="display: flex;">
+                    <div class="latestnews">
+                        <p class="latest-head-para">नवीनतम अपडेट</p>
+                    </div>
+                    <div class="tcontainer" style="width: 100%;">
+                        <div class="ticker-move">
+                            <div class="ticker-item">
+                                <p>सुविधाओं का हो रहा विस्तार, हमर सरकार हमर द्वार | 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+
+            <!-- About Section     -->
+            <section id="aboutSection" class="serviceSection">              
+                <div class="container-fluid">
+                    <h4 style="margin-top: 30px;">मुख्यमंत्री मितान योजना के बारे में
+                        <div style="border-bottom: 4px solid #00237d; width: 218px; padding-top: 5px;"></div>
+                    </h4>                    
+                    <div class="col-md-12 d-flex flex-wrap">
+                    <div class="col-md-8" style="padding-top: 10px; text-align: justify;">                       
+                        <p style="color: rgb(51, 55, 63); margin-top: 25px;">
+                            <p>छत्तीसगढ़ राज्य में माननीय मुख्यमंत्री श्री भूपेश बघेल के कुशल मार्गदर्शन में प्रत्येक शासकीय कार्य सुनियोजित तरीके से संचालित हों और राज्य के नागरिकों को बीना किसी परेशानी के सभी शासकीय योजनाओं का लाभ मिल सके, इसी उद्देश की पूर्ति हेतु नागरिकों के हितों को ध्यान में रखते हुए बदलते आधुनिक समय के साथ माननीय मुख्यमंत्री के परिकल्पना अनुसार निर्धारित समय सीमा में नागरिको के घर तक शासकीय सेवाओं को मितान के माध्यम से नागरिको के घर तक पहुंचाने के लिए मितान योजना की शुरुआत की गई है। </p>
+                            <p>
+                                इस योजना की विशेषता है कि नागरिको को शासन द्वारा प्रदान किए गए टोल फ्री नंबर <b>14545</b> पर कॉल करना है। जिसके बाद शासन द्वारा मितान के माध्यम से नागरिको के घर पर दस्तावेज/प्रमाण पत्र /लाइसेंस बनवाने संबंधी सभी सुविधा उपलब्ध कराई जा रही है । <br/><br/>
+                                <b>योजना का उद्देश्य :</b>
+                            </p>
+                            <ul style="line-height: 2; margin-bottom: 0;">
+                                <li>नागरिकों को घर बैठे सभी शासकीय सेवाओं का लाभ पहुंचाना ।</li>
+                                <li>निर्धारित समय सीमा में सरकारी सुविधाएं उपलब्ध कराना |</li>
+                                <li>योजना के माध्यम से नागरिको को प्रदान किये जाने वाले शासकीय सेवाओं में पारदर्शिता में वृद्धि |</li>
+                                <li>शासन द्वारा उपलब्ध कराए गए टोल फ्री नंबर <b>14545</b> पर कॉल करने पर संबंधी शासकीय सेवा की जानकारी दी जावेगी |</li>
+                                <li>नागरिक के सुविधानुसार नियत की गई तिथि और समय सुनिश्चित कर दस्तावेज बनाने लिए अपॉइंटमेंट बुक की जावेगी|</li>
+                                <li>मितान एजेंट द्वारा नागरिको के निवास स्थान में पहुंच कर सेवा का ऑनलाइन पंजीयन एवं दस्तावेज संकलन करना |</li>
+                                <li>संबधित विभाग को आपके द्वारा प्रदान की गई जानकारी उपलब्ध करा, सेवा निर्धारित समय में प्रदान करने हेतु आगे की कार्यवाही की जावेगी ।</li>
+                                <li>दस्तावेज तैयार होने के उपरांत आपको सूचित कर घर पहुंच कर दस्तावेज उपलब्ध कराया जाएगा ।</li>
+                            </ul><br/>
+                            <b>नागरिक सुविधा हेतु मुख्यमंत्री मितान कॉल सेंटर सेवाएं सुबह 8 बजे से रात 8 बजे तक उपलब्ध हैं ।</b><br/><br/>
+                            <p>मुख्यमंत्री मितान योजना वर्तमान में 14 नगर पालिक निगमों में उपलब्ध है।<br/>
+                               </p>
+                            <div class="grid-container">
+                                <div>1. अंबिकापुर</div>
+                                <div>2. भिलाई</div>
+                                <div>3. भिलाई-चरोदा</div>
+                                <div>4. बिलासपुर</div>
+                                <div>5. बिरगांव</div>
+                                <div>6. चिरमिरी</div>
+                                <div>7. धमतरी</div>
+                                <div>8. दुर्ग</div>
+                                <div>9. जगदलपुर</div>
+                                <div>10. कोरबा</div>
+                                <div>11. रायगढ़</div>
+                                <div>12. रायपुर</div>
+                                <div>13. राजनांदगाव</div>
+                                <div>14. रिसाली </div>
+                            </div>
+                            <p style="margin-top:10px;">नागरिक/निवासी सेवा सूची में उल्लिखित सेवाओं का लाभ उठा सकते हैं।</p>
+                        </p>
+                    </div>
+                    <div class="col-md-4 order-first order-md-4" style="padding-top: 20px; text-align: center;">
+                        <div class="CmDivSection">
+                            <img src="images/CM1.jpg" alt="banner" height="160px" width="160px" class="cmImage" />
+                            <p style="color: #736f6f;font-size: 18px;margin-top: 10px;margin-bottom: 0;"><b>श्री भूपेश
+                                बघेल</b></p>
+                            <p style="color: #5d5d5d">छत्तीसगढ़ के माननीय मुख्यमंत्री</p>
+                        </div>
+                        <div class="CmDivSection">
+                            <img src="images/DR_Dahariya.jpg" alt="banner" height="160px" width="160px" class="cmImage" />
+                            <p style="color: #736f6f;font-size: 18px;margin-top: 10px;margin-bottom: 0;"><b>डॉ. शिव कुमार डहरिया</b></p>
+                            <p style="color: #5d5d5d">मंत्री नगरीय प्रशासन एवं विकास</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row" style="padding:10px 15px; margin-bottom:30px;">                        
+                        <div class="col-md-4 zoom">
+                            <div style="padding: 10px 0;">
+                                <a style="width:100%;" id="myBtn" href="#">
+                                    <div class="left-side_1 left-card"><img src="images/call-center.jpg"></div>
+                                    <div class="right-side_1 right-card" style="padding-bottom: 25%;">
+                                        <h4>कॉल करे <a href="tel:14545" style="color: #00237d;font-size: 20px;">14545</a> <br/>पर स्लॉट बुक करने के लिए </h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 zoom">
+                            <div style="padding: 10px 0;">
+                                <a style="width:100%" href="#trackSection">
+                                    <div class="left-side_2 left-card"><img src="images/search.jpg"></div>
+                                    <div class="right-side_2 right-card">
+                                        <h4>अपने आवेदन की स्थिति को ट्रैक करें</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 zoom">
+                            <div style="padding: 10px 0;">
+                                <a style="width:100%" id="myBtn" href="#aboutSection">
+                                    <div class="left-side left-card"><img src="images/info.jpg"></div>
+                                    <div class="right-side right-card">
+                                        <h4>प्रतिक्रिया दर्ज करे </h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="serviceListSection" class="whiteBgSection">
+                <div class="container-fluid" style="min-height: 80vh;">
+                    <h4 style="margin-top: 30px;">सेवाएं
+                        <div style="border-bottom: 4px solid #00237d; width: 70px; padding-top: 5px;"></div>
+                    </h4>
+                    <div class="col-md-12" style="margin-top:20px; padding: 0;">
+                        <a href="/document-guide" target="_blank" class="btn btn-primary pull-right" style=" border-radius: 4px solid #00237d; background-color:  #00237d;">Document Guide</a>
+                          <!--  https://mitaan-web.web.app/document-guide -->
+                    </div>
+                    <div class="col-md-12" style="margin-top:60px; margin-bottom: 40px; padding: 0;">
+                        <div class="d-flex flex-wrap justify-content-between sub-heading-content">
+                            <div class="col-md-6">
+                                <button class="accordion">मूल निवासी प्रमाण पत्र</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>                                   
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 50%;"></a>यदि लाभार्थी का जन्म छत्तीसगढ़ में हुआ है</a></td>
+                                                <td class="ServiceTable" style="width: 50%;">  
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#">जन्म प्रमाण पत्र</a></li>                                      
+                                                    <li><a href="#">शिक्षा का प्रमाण</a></li>                                                                                                                                                   
+                                                </td>                                        
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 50%;"></a>लाभार्थी या माता-पिता छत्तीसगढ़ में सरकारी नौकरी में काम कर रहे हैं</a></td>
+                                                <td class="ServiceTable" style="width: 50%;">
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#">शिक्षा का प्रमाण</a></li>  
+                                                    <li><a href="#"><b>सरकारी नौकरी का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">भुगतान पर्ची</a></li>    
+                                                        <li><a href="#">सेवा पुस्तिका</a></li>
+                                                        <li><a href="#">आदेश पत्रक</a></li>    
+                                                    </div>
+                                                                                                                                                                                                                                                     
+                                                </td>                                        
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 50%;"></a>लाभार्थी या माता-पिता 15 साल से छत्तीसगढ़ में रह रहे हैं</a></td>
+                                                <td class="ServiceTable" style="width: 50%;">                                      
+                                                    
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#">शिक्षा का प्रमाण</a></li>  
+                                                    <li><a href="#"><b>निवास का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">रजिस्ट्री पेपर</a></li>    
+                                                        <li><a href="#">पानी नल बिल</a></li>
+                                                        <li><a href="#">बिजली बिल</a></li> 
+                                                        <li><a href="#">संपत्ति कर रसीद </a></li>    
+                                                    </div>                                                                                                                                                
+                                                </td>                                        
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 50%;"></a>लाभार्थी या माता-पिता के पास छत्तीसगढ़ में 5 साल के लिए जमीन है</a></td>
+                                                <td class="ServiceTable" style="width: 50%;">  
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#">शिक्षा का प्रमाण</a></li>  
+                                                    <li><a href="#"><b>निवास का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">रजिस्ट्री पेपर</a></li>    
+                                                        <li><a href="#">पानी नल बिल</a></li>
+                                                        <li><a href="#">बिजली बिल</a></li> 
+                                                        <li><a href="#">संपत्ति कर रसीद </a></li>    
+                                                    </div>                                      
+                                                                                                                                                                                               
+                                                </td>                                        
+                                            </tr>
+                                     </table>  
+                                       
+                                    </ul>
+                                </div>
+                                <button class="accordion">अनुसूचित जाति / अनुसूचित जनजाति प्रमाण पत्र</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>                                   
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 20%;"></a>अनुसूचित जाति / अनुसूचित जनजाति प्रमाण पत्र</a></td>
+                                                <td class="ServiceTable" style="width: 80%;">                                        
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#"><b>निवास-पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">किसी भी कक्षा की मार्कशीट </a></li>
+                                                        <li><a href="#">जन्म प्रमाण पत्र </a></li>
+                                                        <li><a href="#">बिजली बिल </a></li>
+                                                        <li><a href="#">राशन कार्ड </a></li>
+                                                        <li><a href="#">वार्ड मेंबर /विधायक /सांसद द्वारा सर्टिफिकेट </a></li>
+                                                        <li><a href="#">सेवा प्रमाण पत्र / पिता / गार्जियन का पहचान पत्र </a></li>
+                                                        <li><a href="#">अधिवास प्रमाण पत्र </a></li>
+                                                        <li><a href="#">भूमि और घर के दस्तावेज </a></li>
+                                                        <li><a href="#">अनैच्छिक प्रवासन क्रम </a></li>  
+                                                    </div> 
+                                                   
+
+                                                    <li><a href="#"><b>जाति का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">दखिल / खरिज पंजी + वंशावली पटवारी द्वारा जारी की गई (यदि दखिल / खरिज ग्रैंड पैरेंट या उससे ऊपर का है) </a></li>
+                                                        <li><a href="#">प्राथमिक विद्यालय शिक्षा का स्थानांतरण प्रमाण पत्र  </a></li>
+                                                        <li><a href="#">पटवारी द्वारा जारी वंशावली के साथ मिसाल (यदि मिसाल ग्रैंड पैरेंट या उससे ऊपर की है) </a></li>
+                                                        <li><a href="#">शैक्षिक प्रमाण पत्र </a></li>
+                                                        <li><a href="#">अधिकार अभिलेख + पटवारी द्वारा जारी वंशावली (यदि अधिकार अधिकार अधिकार ग्रैंड पैरेंट या उससे ऊपर का है) </a></li>
+                                                        <li><a href="#">पटवारी द्वारा जारी जमाबंदी + वंशावली (यदि जामबंदी ग्रैंड पैरेंट या उससे ऊपर की है)</a></li>
+                                                        <li><a href="#">पिता का एससी/एसटी सर्टिफिकेट </a></li>
+                                                        <li><a href="#">पिता / अभिभावक सेवा प्रमाण पत्र / पहचान पत्र </a></li>
+                                                        <li><a href="#">1931 की जनगणना रजिस्टर + पटवारी द्वारा जारी वंशावली (यदि जनगणना रजिस्टर ग्रैंड पैरेंट या उससे ऊपर का है)</a></li>
+                                                        <li><a href="#">पटवारी द्वारा जारी 1959 + वंशावली का नागरिक रजिस्टर (यदि दाखिल / खरिज ग्रैंड पैरेंट या उससे ऊपर का है)</a></li>
+                                                        <li><a href="#">विकलांगता / अनुपलब्धता प्रमाण (पंचनामा नगर निगम सामन्या सभा) </a></li>
+                                                        <li><a href="#">1950 की भूमि की रजिस्ट्री + पटवारी द्वारा जारी वंशावली (यदि रजिस्ट्री ग्रैंड पैरेंट या उससे ऊपर की है) </a></li>
+                                                        <li><a href="#">1950 का थाना पंजी + पटवारी द्वारा जारी वंशावली (यदि थाना पंजी ग्रैंड पैरेंट या उससे ऊपर का है) </a></li>  
+                                                    </div> 
+                                                                                                  
+                                                </td>
+                                            </tr>
+                                        </table>
+                                       
+
+                                    </ul>
+                                </div>
+                                <button class="accordion">अन्य पिछड़ा वर्ग प्रमाण पत्र</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>                                   
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 20%;"></a>अन्य पिछड़ा वर्ग प्रमाण पत्र</a></td>
+                                                <td class="ServiceTable" style="width: 80%;">                                        
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#"><b>निवास-पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">किसी भी कक्षा की मार्कशीट </a></li>
+                                                        <li><a href="#">जन्म प्रमाण पत्र </a></li>
+                                                        <li><a href="#">बिजली बिल </a></li>
+                                                        <li><a href="#">राशन कार्ड </a></li>
+                                                        <li><a href="#">वार्ड मेंबर /विधायक /सांसद द्वारा सर्टिफिकेट </a></li>
+                                                        <li><a href="#">सेवा प्रमाण पत्र / पिता / गार्जियन का पहचान पत्र </a></li>
+                                                        <li><a href="#">अधिवास प्रमाण पत्र </a></li>
+                                                        <li><a href="#">भूमि और घर के दस्तावेज </a></li>
+                                                        <li><a href="#">अनैच्छिक प्रवासन क्रम </a></li>  
+                                                    </div> 
+                                                    <li><a href="#"><b>जाति का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">दखिल / खरिज पंजी + वंशावली पटवारी द्वारा जारी की गई (यदि दखिल / खरिज ग्रैंड पैरेंट या उससे ऊपर का है) </a></li>
+                                                        <li><a href="#">प्राथमिक विद्यालय शिक्षा का स्थानांतरण प्रमाण पत्र  </a></li>
+                                                        <li><a href="#">पटवारी द्वारा जारी वंशावली के साथ मिसाल (यदि मिसाल ग्रैंड पैरेंट या उससे ऊपर की है) </a></li>
+                                                        <li><a href="#">शैक्षिक प्रमाण पत्र </a></li>
+                                                        <li><a href="#">अधिकार अभिलेख + पटवारी द्वारा जारी वंशावली (यदि अधिकार अधिकार अधिकार ग्रैंड पैरेंट या उससे ऊपर का है) </a></li>
+                                                        <li><a href="#">पटवारी द्वारा जारी जमाबंदी + वंशावली (यदि जामबंदी ग्रैंड पैरेंट या उससे ऊपर की है)</a></li>
+                                                        <li><a href="#">पिता का अन्य पिछड़ा वर्ग सर्टिफिकेट </a></li>
+                                                        <li><a href="#">पिता / अभिभावक सेवा प्रमाण पत्र / पहचान पत्र </a></li>
+                                                        <li><a href="#">1984 की जनगणना रजिस्टर + पटवारी द्वारा जारी वंशावली (यदि जनगणना रजिस्टर ग्रैंड पैरेंट या उससे ऊपर का है)</a></li>
+                                                        <li><a href="#">पटवारी द्वारा जारी 1984 + वंशावली का नागरिक रजिस्टर (यदि दाखिल / खरिज ग्रैंड पैरेंट या उससे ऊपर का है)</a></li>
+                                                        <li><a href="#">विकलांगता / अनुपलब्धता प्रमाण (पंचनामा नगर निगम सामन्या सभा)  </a></li>
+                                                        <li><a href="#">1984 की भूमि की रजिस्ट्री + पटवारी द्वारा जारी वंशावली (यदि रजिस्ट्री ग्रैंड पैरेंट या उससे ऊपर की है)  </a></li>
+                                                        <li><a href="#">1984 का थाना पंजी + पटवारी द्वारा जारी वंशावली (यदि थाना पंजी ग्रैंड पैरेंट या उससे ऊपर का है)  </a></li>
+                                                    </div>
+                                                    <li><a href="#"><b>आय का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आय प्रमाण पत्र </a></li>
+                                                        <li><a href="#">पटवारी/सरपंच/ पार्षद से प्रमाण पत्र</a></li>
+                                                        <li><a href="#">आय प्रमाणपत्र नियोक्ता </a></li>
+                                                        <li><a href="#">प्रपत्र 16 (Form 16) </a></li>
+                                                        <li><a href="#">भूमि/मकान से आय  </a></li>                                                      
+                                                    </div> 
+                                                                                                   
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </ul>
+                                </div>
+                                <button class="accordion">आय प्रमाण पत्र</button>                              
+                               <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>आय प्रमाण पत्र </a></td>
+                                                <td class="ServiceTable" style="width: 50%;">
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#"><b>आय का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">पटवारी/सरपंच/वार्ड सदस्य से आय प्रमाण पत्र </a></li>
+                                                        <li><a href="#">प्रपत्र 16 </a></li>                                                         
+                                                    </div> 
+                                                    <li><a href="#"><b>पहचान प्रमाण  (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस  </a></li>   
+                                                        <li><a href="#">मतदाता पहचान पत्र  </a></li>   
+                                                        <li><a href="#">पैन कार्ड </a></li>   
+                                                        <li><a href="#">सरकारी आईडी प्रूफ </a></li>                                                         
+                                                        <li><a href="#">10वीं मार्कशीट  </a></li>   
+                                                    </div>                                                   
+                                                                                           
+                                                </td>                                        
+                                            </tr>
+                                            
+                                        </table>                                        
+                                    </ul>
+                                </div>
+                                <button class="accordion">दस्तावेज के नकल के लिए अनुरोध गैर-डिजिटल (भूमि रिकॉर्ड आदि की प्रति)</button>
+                                <div class="panel accordion-list-half">
+                                    <ul class="ServiceTable">
+                                        <li><a href="#">नक़ल आवदेन पत्र </a></li>
+                                        <li><a href="#">आधार कार्ड </a></li>                                   
+                                    </ul>
+                                </div>
+                                <button class="accordion">मृत्यु प्रमाण पत्र</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>मृत्यु के 30 दिनों के भीतर मृत्यु प्रमाण पत्र</a></td>
+                                                <td class="ServiceTable" style="width: 70%;">
+                                                    <li><a href="#">फार्म 2 (मृत्यु सुचना प्रपात्र)</a></li>
+                                                    <li><a href="#">आधार कार्ड </a></li>
+                                                    <li><a href="#">पासपोर्ट </a></li>
+                                                    <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                    <li><a href="#">सिफारिश पत्र</a></li>
+                                                    <li><a href="#">अस्पताल द्वारा पोस्टमॉर्टम रिपोर्ट</a></li>
+                                                    <li><a href="#">पुलिस द्वारा एफआईआर कॉपी </a></li>
+                                                </td>
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>मृत्यु के 31 दिनों से 1 वर्ष के बाद मृत्यु प्रमाण पत्र</a></td>
+                                                <td class="ServiceTable" style="width: 70%;">
+                                                    <li><a href="#">फार्म 2 (मृत्यु सुचना प्रपात्र)</a></li>
+                                                    <li><a href="#">आधार कार्ड </a></li>
+                                                    <li><a href="#">पासपोर्ट </a></li>
+                                                    <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                    <li><a href="#">सिफारिश पत्र</a></li>
+                                                    <li><a href="#">शपथपत्र </a></li>
+                                                    <li><a href="#">फार्म 10</a></li>
+                                                    <li><a href="#">अस्पताल द्वारा पोस्टमॉर्टम रिपोर्ट </a></li>
+                                                    <li><a href="#">पुलिस द्वारा एफआईआर कॉपी</a></li>
+                                                    <li><a href="#">चालान/ नगद/ यूपीआई (मितान एजेंट को)</a></li>
+                                                </td>
+                                            </tr>                                            
+                                        </table>
+                                    </ul>
+                                </div>
+                                <button class="accordion">विवाह पंजीकरण और प्रमाणपत्र</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >                                                
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>                                                
+                                            </tr>
+                                            <tr class="ServiceTable">                                               
+                                                <td class="ServiceTable" style="width: 20%;"></a>दूल्हा और दुल्हन की पहली शादी</a></td>
+                                                <td class="ServiceTable" style="width: 55%;">                                        
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#">संयुक्त फोटोग्राफ</a></li>
+                                                    <li><a href="#"><b>दूल्हा उम्र का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">पैन कार्ड </a></li>
+                                                        <li><a href="#">हाई स्कूल मार्कशीट </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                        <li><a href="#">जन्म प्रमाण पत्र </a></li>                                                     
+                                                    </div> 
+                                                    
+                                                    <li><a href="#"><b>दुल्हन उम्र का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">पैन कार्ड </a></li>
+                                                        <li><a href="#">हाई स्कूल मार्कशीट </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                        <li><a href="#">जन्म प्रमाण पत्र </a></li>                                                     
+                                                    </div> 
+
+                                                    <li><a href="#"></a>हस्ताक्षरित प्रपत्र </a></li>
+                                                    <li><a href="#"></a>शादी का निमंत्रण कार्ड </a></li>
+                                                    <li><a href="#"></a>पुजारी / चर्च / मौलवी या आर्य समाज द्वारा जारी विवाह प्रमाण पत्र </a></li>
+                                                    <li><a href="#"></a>फ़ोटो </a></li>
+                                                    <li><a href="#"></a>चालान </a></li>
+                                                </td>                                        
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 25%;"></a>या तो दुल्हन या दूल्हे या दोनों का दूसरा विवाह (नीचे अतिरिक्त दस्तावेज की आवश्यकता होगी)</a></td>
+                                                <td class="ServiceTable" style="width: 55%;"> 
+                                                    <li><a href="#">मृत्यु प्रमाण पत्र</a></li>    
+                                                    <li><a href="#">तलाक डिक्री</a></li>                                           
+                                                                                               
+                                                </td>
+                                            </tr>                                            
+                                        </table>  
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6">                               
+                                <button class="accordion">जन्म प्रमाण पत्र</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>  
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>30 दिनों तक की उम्र</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#">फार्म 1 (जन्म सुचना प्रपत्र)</a></li>
+                                                    <li><a href="#">आवेदन पत्र</a></li>
+                                                    <li><a href="#"><b>पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                    </div>
+                                                    <li><a href="#">सिफारिश पत्र</a></li>
+                                                    <li><a href="#"> फ़ोटो</a></li>                                                                                       
+                                                </td>                                        
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>उम्र 31 दिन से 1 वर्ष</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#">फार्म 1 (जन्म सुचना प्रपत्र)</a></li>
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#"><b>पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                    </div>
+                                                    <li><a href="#">प्रपत्र 10 (Form 10)</a></li>  
+                                                    <li><a href="#">सिफारिश पत्र</a></li>
+                                                    <li><a href="#">फ़ोटो</a></li>  
+                                                    <li><a href="#">चालान/ नगद/ यूपीआई (मितान एजेंट को) </a></li>  
+
+                                                </td>                                        
+                                            </tr>
+                                        </table> 
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">दुकान और स्थापना पंजीकरण</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>  
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>नया आवेदन</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#">संपत्ति कर रसीद</a></li>
+                                                    <li><a href="#">किराया अनुबंध</a></li>
+                                                    <li><a href="#">आधार</a></li>
+                                                    <li><a href="#"><b>पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">पैन कार्ड </a></li>
+                                                        <li><a href="#">मतदाता पहचान पत्र </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                    </div>
+                                                    <li><a href="#">बैंक भुगतान रसीद / भुगतान रसीद</a></li>  
+                                                    <li><a href="#">व्यापार लाइसेंस</a></li>
+                                                    <li><a href="#">खाद्य लाइसेंस</a></li>  
+                                                    <li><a href="#">गोमास्टा प्रपत्र</a></li> 
+                                     
+                                                </td>                                        
+                                            </tr>
+                                             <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>लाइसेंस का नवीनीकरण</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#">संपत्ति कर रसीद</a></li>
+                                                    <li><a href="#">पुराने लाइसेंस प्रतिलिपि</a></li>
+                                                    <li><a href="#">आधार</a></li>
+                                                    <li><a href="#"><b>पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">पैन कार्ड </a></li>
+                                                        <li><a href="#">मतदाता पहचान पत्र </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                    </div>
+                                                    <li><a href="#">बैंक भुगतान रसीद / भुगतान रसीद</a></li>  
+                                                    <li><a href="#">व्यापार लाइसेंस</a></li>
+                                                    <li><a href="#">खाद्य लाइसेंस</a></li>  
+                                                   
+                                                </td>                                        
+                                            </tr>
+                                        </table>
+                                    </ul>
+                                </div>
+
+                                <button class="accordion">भूमि सूचना (भूमि उपयोग)</button>
+                                <div class="panel accordion-list-half">
+                                    <ul class="ServiceTable">                                        
+                                        <li><a href="#"></a>B1</a></li>
+                                        <li><a href="#"></a>P2(खतोनी)</a></li>
+                                        <li><a href="#"></a>खसारा</a></li>
+                                        <li><a href="#"></a>चालान</a></li>                                        
+                                    </ul>
+                                </div>
+                                <!-- <button class="accordion">जल नल कनेक्शन</button>
+                                <div class="panel accordion-list-half">
+                                    <ul class="ServiceTable">
+                                        <li><a href="#"></a>कर पर्ची</a></li>
+                                        <li><a href="#"></a>बीपीएल प्रमाणपत्र</a></li>
+                                        <li><a href="#"></a>पते का प्रमाण</a></li>
+                                        <li><a href="#"></a>पहचान प्रमाण</a></li>
+                                    </ul>
+                                </div> -->
+
+                                <button class="accordion">जन्म प्रमाण पत्र सुधार</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>  
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>यदि आवेदक स्वयं के लिए आवेदन कर रहा है</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#"></a>एप्लीकेशन फॉर्म</a></li>
+                                                    <li><a href="#"></a>शपथपत्र</a></li>
+                                                    <li><a href="#"></a>जन्म प्रमाण पत्र</a></li>
+                                                    <li><a href="#"></a>आधार कार्ड</a></li>
+                                                    <li><a href="#"></a>पासपोर्ट</a></li>
+                                                                                                                                      
+                                                </td>                                        
+                                            </tr>
+                                             <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>यदि माता-पिता बच्चे के लिए आवेदन कर रहे हैं</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#"></a>एप्लीकेशन फॉर्म</a></li>
+                                                    <li><a href="#"></a>शपथपत्र</a></li>
+                                                    <li><a href="#"></a>जन्म प्रमाण पत्र</a></li>
+                                                    <li><a href="#"></a>आधार कार्ड</a></li>
+                                                    <li><a href="#"></a>पासपोर्ट</a></li>   
+                                                </td>                                        
+                                            </tr>
+                                        </table>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मृत्यु प्रमाण पत्र सुधार</button>
+                                <div class="panel accordion-list">
+                                    <ul>
+                                        <table class="ServiceTable">
+                                            <tr class="ServiceTable" >
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का प्रकार
+                                                </th>
+                                                <th class="ServiceTable">
+                                                    दस्तावेज़ का नाम
+                                                </th>  
+                                            </tr>
+                                            <tr class="ServiceTable">
+                                                <td class="ServiceTable" style="width: 30%;"></a>मृत्यु प्रमाण पत्र सुधार</a></td>
+                                                <td class="ServiceTable" style="width: 30%;">
+                                                    <li><a href="#">मृत्यु प्रमाण पत्र</a></li>
+                                                    <li><a href="#"><b>पहचान का प्रमाण (कोई भी)</b></a></li>
+                                                    <div style="padding-left: 20px;">
+                                                        <li><a href="#">आधार कार्ड </a></li>
+                                                        <li><a href="#">ड्राइविंग लाइसेंस </a></li>
+                                                        <li><a href="#">पासपोर्ट</a></li>
+                                                    </div>
+                                                    <li><a href="#">शपथपत्र</a></li>
+                                                    <li><a href="#">जन्म प्रमाण पत्र</a></li>
+                                                    <li><a href="#">चालान/ नगद/ यूपीआई (मितान एजेंट को)</a></li>
+                                                    
+                                                </td>                                        
+                                            </tr>                                             
+                                        </table>
+                                    </ul>
+                                </div>
+                                <button class="accordion">विवाह प्रमाण पत्र सुधार</button>
+                                <div class="panel accordion-list-half">
+                                    <ul class="ServiceTable">
+                                        <li><a href="#"></a>विवाह प्रमाणपत्र</a></li>
+                                        <li><a href="#"></a>आधार कार्ड </a></li>
+                                        <li><a href="#"></a>शपथपत्र </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Faq Section -->
+            <section id="faqSection" class="serviceSection">
+                <div class="container-fluid">
+                    <h4 style="margin-top: 32px;">सामान्य प्रश्न
+                        <div style="border-bottom: 4px solid #00237d; width: 70px; padding-top: 5px;"></div>
+                    </h4>
+                    <div>
+                        <p>यहां सबसे सामान्य प्रश्नों के उत्तर दिए गए हैं। उत्तर नहीं मिल रहा है? हमें संपर्क करें!</p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 sub-heading-content">
+                                <div class="faq-left-card"><img src="images/faq3.png"></div>
+                            </div>
+                            <div class="col-md-8 sub-heading-content">
+                                <button class="accordion">हमर सरकार हमर द्वार (मुख्यमंत्री मितान योजना) क्या
+                                    है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>हमर सरकार हमर द्वार (मुख्यमंत्री मितान योजना) की परिकल्पना छत्तीसगढ़ के नागरिकों को होम डिलीवरी मॉडल के माध्यम से 100 से अधिक नागरिक केंद्रित सेवाएं प्रदान करने के लिए की गई है।वर्तमान में छत्तीसगढ़ के 14 शहरों में सेवाएं शुरू की गई हैं।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">हमर सरकार हमर द्वार (मुख्यमंत्री मितान योजना) के उद्देश्य क्या
+                                    हैं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मुख्यमंत्री मितान योजना को कई उद्देश्यों के साथ परिकल्पित किया गया है जैसे
+                                            कि समयबद्ध तरीके से नागरिक सेवाएं प्रदान करना, सुलभ नागरिक सेवा प्रदान करना,
+                                            नागरिक सेवाओं के बारे में जानकारी प्राप्त करने के लिए नागरिकों को मंच प्रदान
+                                            करना, एक प्रशासन तंत्र विकसित करना जो परियोजना के वास्तविक प्रभाव का आकलन
+                                            प्रदान करे एवं नागरिको के साथ शासन और राज्य की भागीदारी के बारे में
+                                            सकारात्मक जागरूकता पैदा करना ।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मुख्यमंत्री मितान योजना के माध्यम से नागरिक कौन सी सेवा का लाभ
+                                    उठा सकते है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मुख्यमंत्री मितान योजना वर्तमान में छत्तीसगढ़ के 14 शहरों (शहरी स्थानीय
+                                            निकाय (यूएलबी)) में उपलब्ध है। इन शहरों में रहने वाले नागरिक, मुख्यमंत्री
+                                            मितान योजना के माध्यम से सेवाओं का लाभ उठाने के पात्र हैं। </li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">वे यूएलबी कौन से हैं जहां मुख्यमंत्री मितान योजना सक्रिय
+                                    है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>अंबिकापुर, बिलासपुर, धमतरी, कोरबा, राजनांदगांव, भिलाई, बिरगांव, दुर्ग,
+                                            रायगढ़, रिसाली, भिलाई-चरौदा, चिरमिरी (कोरिया), जगदलपुर और रायपुर ।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मैं मितान के माध्यम से सेवाओं का लाभ कैसे उठा सकता
+                                    हूं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>आप 14545 पर कॉल कर प्रशिक्षित कॉल सेंटर के अधिकारी के माध्यम से मितान पर
+                                            उपलब्ध नागरिक सेवा का लाभ उठा सकते है ।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मितान के माध्यम से सेवाओं का लाभ उठाने के लिए मुझे कितना
+                                    भुगतान करना होगा?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>नागरिक को सेवाओं का लाभ उठाने के लिए 50 रुपये और विभागीय शुल्क का भुगतान
+                                            करना होगा। विभागीय शुल्क हर सेवा में भिन्न होता है। शुल्क के बारे में अधिक
+                                            जानने के लिए कृपया 'सेवा सूची' पर क्लिक करें।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मैं कैसे पुष्टि करूं कि मेरा अपॉइंटमेंट बुक हो गया है या
+                                    नहीं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>अपॉइंटमेंट बुक होने के बाद, आपको पंजीकृत मोबाइल नंबर एक एसएमएस प्राप्त होगा।
+                                            आप इस वेबसाइट के 'अपने आवेदन की स्थिति को ट्रैक करें' पृष्ठ/अनुभाग पर भी
+                                            नियुक्ति की स्थिति सत्यापित कर सकते हैं।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मितान के माध्यम से कौन सी सेवाएं उपलब्ध हैं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान के जरिए फिलहाल 14 सेवाएं दी जा रही हैं। सेवाओं की पूरी सूची के लिए
+                                            कृपया 'सेवा सूची' पर क्लिक करें।
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">क्या मैं एक स्लॉट में कई सेवाओं का लाभ उठा सकता हूं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>नहीं, एक स्लॉट में केवल एक ही सेवा का लाभ उठाया जा सकता है। कई सेवाओं का लाभ
+                                            उठाने के लिए, आप प्रत्येक सेवा के लिए अलग-अलग स्लॉट बुक कर सकते हैं।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मितान के माध्यम से सेवाओं का लाभ उठाने के लिए मुझे किन
+                                    दस्तावेजों की आवश्यकता होगी?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>दस्तावेज़ों की आवश्यकता हर सेवा में भिन्न होती है। वांछित सेवा के लिए आवश्यक
+                                            दस्तावेजों की आवश्यकता के बारे में जानने के लिए कृपया 'सेवा सूची' पर क्लिक
+                                            करें।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मैं मितान के माध्यम से प्राप्त सेवा की स्थिति को कैसे ट्रैक
+                                    करूं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>आवेदन प्रक्रिया के प्रत्येक चरण में आपको पंजीकृत मोबाइल नंबर पर एक एसएमएस
+                                            अपडेट प्राप्त होगा। आप इस वेबसाइट के 'अपने आवेदन की स्थिति को ट्रैक करें'
+                                            पृष्ठ/अनुभाग के माध्यम से भी ट्रैक कर सकते हैं।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मैं कैसे पुष्टि करूं कि मेरे पास आने वाला मितान फील्ड
+                                    एक्जीक्यूटिव (मितान एजेंट) आधिकारिक है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान फील्ड एक्जीक्यूटिव आधिकारिक वर्दी पहने हुए होगा और आईडी कार्ड ले कर
+                                            आएगा। अपॉइंटमेंट बुक हो जाने के बाद, आपको पंजीकृत मोबाइल नंबर पर मितान फील्ड
+                                            एक्जीक्यूटिव का विवरण प्राप्त होगा, जिसका उपयोग आप मितान फील्ड एक्जीक्यूटिव
+                                            को सत्यापित करने के लिए कर सकते हैं।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">क्या मैं अपनी अपॉइंटमेंट को पुनर्निर्धारित कर सकता
+                                    हूं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>हां, आप किसी भी अप्रत्याशित परिस्थिति में कॉल सेंटर नंबर पर कॉल करके
+                                            निर्धारित अपॉइंटमेंट समय से 1 दिन पहले अपनी अपॉइंटमेंट को फिर से निर्धारित
+                                            कर सकते हैं।</li>
+                                    </ul>
+                                </div>
+                               
+                                <button class="accordion">मितान फील्ड एक्जीक्यूटिव (मितान एजेंट) के समय पर न पहुंचने की
+                                    स्थिति में मैं कहां संपर्क करूं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान फील्ड एक्जीक्यूटिव (मितान एजेंट) स्थिति के बारे में जानने के लिए आप
+                                            कॉल सेंटर के कार्यकारी से संपर्क कर सकते हैं।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मितान में कौन से शुल्क भुगतान विकल्प सक्षम/उपलब्ध
+                                    हैं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान में नकद और विभिन्न डिजिटल भुगतान मोड (यूपीआई, पेटीएम आदि) उपलब्ध हैं।
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मितान सेवा किस दिन उपलब्ध है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान सेवा 26 जनवरी, 15 अगस्त और 2 अक्टूबर को छोड़कर सप्ताह के सभी दिनों में
+                                            सुबह 8 बजे से रात 8 बजे तक उपलब्ध है।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">क्या मुझे सेवा के लिए आवश्यक सहायक दस्तावेज की मूल प्रतियां
+                                    मितान फील्ड एक्जीक्यूटिव को सौपना होगा?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान फील्ड एक्जीक्यूटिव आपकी उपस्थिति में टैबलेट/मोबाइल में दस्तावेजों को
+                                            स्कैन करेगा, सिस्टम में दस्तावेज अपलोड करेगा और मूल दस्तावेज आपको वापस कर
+                                            देगा। मितान फील्ड एक्जीक्यूटिव आपके दस्तावेजों की मूल कॉपी या फोटोकॉपी लाने
+                                            के लिए अधिकृत नहीं है।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मैं अपना प्रमाणपत्र कैसे प्राप्त कर सकता हूं?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>मितान फील्ड एक्जीक्यूटिव आपके द्वारा दिए गए पते पर जाकर एक सीलबंद लिफाफे में
+                                            प्रमाण पत्र वितरित करेगा।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">मैंने जिस सेवा के लिए आवेदन किया है, उसकी समय-सीमा क्या
+                                    है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>हर सेवा में समय-सीमा भिन्न होती है। प्रत्येक सेवा की समय-सीमा जानने के लिए,
+                                            कृपया 'सेवा सूची' पर क्लिक करें।</li>
+                                    </ul>
+                                </div>
+                                <button class="accordion">क्या मुझे आवेदन जमा करने के समय भुगतान की जाने वाली फीस के
+                                    अलावा कोई अतिरिक्त राशि का भुगतान करने की आवश्यकता है?</button>
+                                <div class="panel accordionlist">
+                                    <ul>
+                                        <li>नहीं, आवेदन जमा करने के समय आपके द्वारा भुगतान किए गए शुल्क में सभी सेवा
+                                            समाहित/शामिल है।</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+         
+
+            <!-- Track Section -->
+            <section id="trackSection" class="whiteBgSection">
+                <div class="container-fluid" style="margin-bottom: 60px;">
+                    <h4 style="margin-top: 30px;">आपने आवेदन को ट्रैक करे
+                        <div style="border-bottom: 4px solid #00237d; width: 85px; padding-top: 5px;">
+                    </h4>
+                    <div class="padding-bottom-3x mb-1" style="margin-top:25px;">
+                        <div class="card mb-3">
+                            <div class="p-4 text-center text-white text-lg rounded-top" style="background: #00237d;">
+                               
+                                    <div>
+                                        <div class="col-auto track-input">
+                                            <label class="sr-only" >आवेदन संख्या दर्ज करे</label>
+                                            <div class="input-group mb-2">
+                                                <input type="text" class="form-control" id="ARNnumber"  ng-model="track.ARNnumber"
+                                                    placeholder="आवेदन संख्या दर्ज करे">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto track-btn" style="display: inline-block;">
+                                            <button type="submit" class="btn btn-primary mb-2" ng-click="submit()">खोजे</button>
+                                        </div>
+                                        
+
+                                        <div id="loader" class="col-auto" style="display: none;">
+                                            <img src="images/newloader.gif" width="50px" height="50px">
+                                        </div>
+                                        <div  class="col-auto">
+                                            <span id="message"></span>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                            <div class="p-3 text-center text-white bg-dark rounded-top" ><span
+                                    class="text-uppercase">आवेदन REF नंबर - </span><span id="ticketNumber" class="text-medium">NA</span>
+                            </div>
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-between py-3 px-2 bg-secondary">
+                                <div class="w-100 text-center py-1 px-2">
+                                    <span  class="text-medium"><b>आवेदक का नाम:</b></span><br><span id="citizenName" class="marg-l-15-all">NA</span>
+                                </div>
+                                <div class="w-100 text-center py-1 px-2">
+                                    <span  class="text-medium"><b>स्थिति:</b></span><br>
+                                    <span id="status" class="marg-l-15-all">NA</span>
+                                </div>
+                                <!-- <div class="w-100 text-center py-1 px-2"><span class="text-medium">Last Updated Date:</span>
+                                    <span class="marg-l-15-all">{{track.application.updatedAt?track.application.updatedAt:'NA'}}</span>
+                                </div> -->
+                                <div  class="w-100 text-center py-1 px-2"><span class="text-medium"><b>अंतिम अद्यतन तिथि:</b></span><br>
+                                    <span id="datetime" class="marg-l-15-all">NA</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="steps d-flex flex-wrap flex-sm-nowrap justify-content-between padding-top-2x padding-bottom-1x"
+                                    style="padding-top: 20px;">
+                                    
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-cart"></i></div>
+                                        </div>
+                                        <h4 class="step-title">आवेदन कर दिया गया</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-note2"></i></div>
+                                        </div>
+                                        <h4 class="step-title">फील्ड एजेंट द्वारा प्रगति पर</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-culture"></i></div>
+                                        </div>
+                                        <h4 class="step-title">क्षेत्र विभाग द्वारा प्रगति पर</h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-car"></i></div>
+                                        </div>
+                                        <h4 class="step-title">डिलीवरी के लिए बाहर  </h4>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-icon-wrap">
+                                            <div class="step-icon"><i class="pe-7s-home"></i></div>
+                                        </div>
+                                        <h4 class="step-title">पहुंचा दिया गया</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+
+              <!-- Contact Section -->
+              <section id="contactSection" class="serviceSection">
+                <div class="container-fluid">
+                    <h4 style="margin-top: 30px;">संपर्क करें
+                        <div style="border-bottom: 4px solid #00237d; width: 85px; padding-top: 5px;">
+                    </h4>
+                    <div class="row" style="margin-top: 20px; padding: 0 15px;">
+
+                        <div class="col-md-4 contact-left" style="margin-top: 10px;">
+                            <div class="contact-us-content">
+                                <div style="display: flex;">
+                                    <div><i class="fa fa-map-marker contact-icon" aria-hidden="true"></i></div>
+                                    <div style="padding-left: 15px;">
+                                        <p style="display: inline-block;">राज्य शहरी विकास एजेंसी</br>
+                                            नवा रायपुर अटल नगर,</br>
+                                            इंद्रावती भवन,</br>
+                                            रायपुर, छत्तीसगढ़  492002</p>                            
+                                    </div>
+                                </div>
+
+                                <div style="display: flex;">
+                                    <div>
+                                        <i class="fa fa-calendar contact-icon" aria-hidden="true"></i>
+                                    </div>
+                                    <div style="padding-left: 15px; padding-top: 5px;">
+                                        <p style="display: inline-block; margin:0">सभी दिन </p>
+                                        <p class="time">(3 राष्ट्रीय अवकाश को छोड़कर)</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; margin-top:20px;">
+                                    <div><i class="fa fa-clock-o contact-icon" aria-hidden="true"></i></div>
+                                    <div style="padding-left: 15px; padding-top: 5px;">
+                                        <p class="time">सुबह 8 से रात 8 बजे तक</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top:20px;">
+                                    <div><i class="fa fa-phone contact-icon" aria-hidden="true"></i></div>
+                                    <div style="padding-left: 15px; padding-top: 5px;">
+                                        <a href="tel:14545" style="color: #e5e7ec;">14545</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 contact-right" style="margin-top: 10px;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12515.535381305126!2d81.79078552825708!3d21.156738413527712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x858c47da3af6101e!2sState%20Urban%20Development%20Agency!5e0!3m2!1sen!2sin!4v1651490146291!5m2!1sen!2sin"
+                                width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>                         
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <div class="footer-copyright">
+                <footer>
+                    <ul id="menu" style="padding-left: 0;">
+                        <li>Copyright © 2022. All rights reserved with Urban Administration & Development (UAD) , Raipur, Chhattisgarh </li>
+                    </ul>
+                </footer>
+            </div>
+        </main> 
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+
+        <script src="https://kit.fontawesome.com/305d0184a5.js" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.html"><\/script>')</script>
+        <script src="./js/jquery-2.2.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/holder.min.js"></script>
+        <script src="js/track.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <script src="js/page.js"></script>
+
+    </section>
+
+
+</body>
+
+</html>
